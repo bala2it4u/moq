@@ -27,6 +27,14 @@ namespace Moq
         [CompilerGenerated]
         public static T Of<T, T1>(params object[] constructorArgs) where T : class => Create<T>(MockBehavior.Loose, constructorArgs, typeof(T1));
 
+        /// <summary>
+        /// Creates a mock that inherits or implements the type <typeparamref name="T"/>.
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="T1"></typeparam>
+        /// <typeparam name="T2"></typeparam>
+        /// <param name="constructorArgs"></param>
+        /// </summary>
+        /// <returns></returns>
         [MockGenerator]
         [GeneratedCode("Moq", "5.0")]
         [CompilerGenerated]
